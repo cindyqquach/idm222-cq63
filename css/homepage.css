@@ -1,0 +1,185 @@
+:root {
+    --margin-left: 20px; 
+    --color-black: #101111; 
+    --color-white: #F5F5F5; 
+    --regular-small-text: normal 17px/30px 'obviously', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'obviously', sans-serif;
+    font-family: 'swear-display', serif;
+    scroll-behavior: smooth;
+}
+
+header, main{
+    background-color: var(--color-white);
+}
+
+.introHeader {
+    display: flex; 
+    flex-flow: column wrap;
+}
+
+.logo {
+    align-self: center;
+   padding: 20px 10px; 
+   
+    
+}
+
+/*UI UX DESIGNER*/
+.title {
+ font:  italic 20px/26px 'obviously', sans-serif; 
+ color: var(--color-black);
+ margin-top:-65px;
+ padding-right: 30px;  
+ align-self: flex-end;
+
+}
+
+/*I aim...*/
+.mainIntro p{
+    font: normal 20px/26.8px 'obviously', sans-serif;
+    color: var(--color-black);
+    padding: var(--margin-left);
+    margin-top: 310px; }
+
+/*Stunning, ethical, effective*/
+.underline {
+    text-decoration: underline;
+}
+
+.menu {
+    width: 20%; 
+    height: auto; 
+    padding-left: var(--margin-left);
+}
+
+
+/*circle*/
+/*.iconBlack{
+    width: 50%; 
+    height: auto; 
+    position: relative; 
+    right:  
+    z-index: 1;
+    align-self: flex-end;
+}*/
+
+.iconWhite {
+    margin-left:100px; 
+    width: 50%; 
+    height: auto;
+    position: relative;  
+    z-index: 5;
+    align-self: flex-end;
+}
+
+
+.mainFooter {
+    display: flex; 
+    align-items: center;
+    position: relative; 
+}
+
+
+/*selected works*/
+.casestudy{
+    display: flex; 
+    flex-flow: row wrap; 
+}
+
+/*?? still puzzled how this doesn't work? -> text at center and 70px margin from top*/
+.works {
+    align-items: center;
+    margin-top: 70px; 
+}
+
+.order {
+    font: italic 72px 'obviously', sans-serif;
+    color: var(--color-black);
+    margin: 0 var(--margin-left);}
+
+/*NBP*/
+.title1 {
+    font: bold 32px/37px 'obviously', sans-serif; 
+    color: var(--color-black);
+    font-style: bold;
+    padding: 0 var(--margin-left);
+    margin-bottom: 15px; 
+    text-decoration: none;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--color-black);
+    margin: 5px var(--margin-left); 
+   
+}
+
+.container1 p {
+    padding: 5px var(--margin-left);
+}
+
+.container1 img {
+    width: 100%; 
+    height: auto; 
+    align-self: center;
+    padding: 0 var(--margin-left);} 
+
+/*UI/UX Casestudy 2021*/
+.descriptionNbp {
+    display: flex; 
+    flex-flow: column nowrap; 
+    justify-content: space-between;
+    justify-items: center;
+}
+.container1 p {
+    font: normal 20px/26.8px 'obviously', sans-serif; 
+    color: var(--color-black);
+    margin-bottom: 50px; 
+}
+
+.year{
+  justify-self: flex-end;
+}
+/* year need to be in same line as UI/UX Case study*/
+
+
+
+/*FOOTERRRR*/
+
+footer {
+    z-index: -2; 
+    background-color: var(--color-black);
+    color: var(--color-white); 
+}
+/*
+.swoosh {
+    position: relative;
+    left: 2px; 
+    top: 5px; 
+    z-index: 2; 
+}
+*/
+
+.footer1, .footer2, .footer3{
+    padding: 25px var(--margin-left) 10px;
+}
+footer h3 {
+    font: italic 30px/35px 'swear-display', serif; 
+}
+
+footer a, ul{
+    font: var(--regular-small-text);
+    color: var(--color-white);
+    text-decoration: none;
+    margin-top: 4px; 
+}
+.credit {
+    padding: var(--margin-left);
+    font: var(--regular-small-text);
+}
