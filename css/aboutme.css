@@ -1,0 +1,361 @@
+:root {
+    --margin-left-mobile: 20px; 
+    --margin-left-tablet: 30px; 
+    --margin-left-desktop: 50px; 
+    --color-black: #101111; 
+    --color-white: #F5F5F5; 
+    --regular-small-text: normal 17px/30px 'obviously', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'obviously', sans-serif;
+    font-family: 'swear-display', serif;
+    scroll-behavior: smooth;
+}
+
+.intro {
+    background-color: var(--color-white);
+}
+
+@media screen and (min-width:0px) {
+/*NAV BAR + logo Icon*/
+    .logo {
+        width: 15%; 
+        height: auto; 
+        margin: 40px 10px ;
+    }
+    
+    .menu {
+        width: 13%; 
+        height: auto; 
+        margin:  var(--margin-left-mobile);
+    }
+    
+    .navbar {
+        display: flex; 
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    
+    .logoText{
+        width: 90%; 
+        justify-self: center;
+        margin: -25px 20px; 
+        position: absolute; 
+        z-index: 10; 
+    }
+    
+/*PHOTO*/ 
+    .portrait {
+        width: 50%; 
+        position: relative; 
+        left: 160px; 
+        top: 75px; 
+        height: auto; 
+    }
+    
+/*Intro text*/ 
+    .bio p  {
+        font: normal 16px/27px 'obviously', sans-serif; 
+        margin: 80px var(--margin-left-mobile) 10px;
+        color: var(--color-black); 
+    }
+    
+    .bio a {
+        text-decoration: none;
+        color: var(--color-black); 
+        font: bold 30px/35px 'swear-display-cilati', serif; 
+        margin: 0 var(--margin-left-mobile); 
+    }
+    
+    .bio .resume {
+        margin-top: 10px; 
+    }
+    
+    main {
+        background-color: var(--color-black);
+        color: var(--color-white); 
+    }
+    
+/*Each section of resume*/
+    .container {
+        padding-top: 10px;  
+    }
+    .container h2 {
+        font: bold 40px/37px 'swear-display-cilati', serif; 
+        margin: var(--margin-left-mobile) var(--margin-left-mobile) 3px; 
+    }
+    
+/*line*/ 
+    hr {
+        border: none;
+        height: 1px;
+        background-color: var(--color-white);
+        margin: var(--margin-left-mobile); 
+    }
+    
+/*text*/ 
+    .text {
+        font: normal 16px/29px 'obviously', sans-serif; 
+        margin: 5px var(--margin-left-mobile);
+        color: var(--color-white); 
+    }
+    
+    .textSmall li{
+        font: normal 16px/27px 'obviously', sans-serif; 
+        /*margin-top: 5px;*/
+        margin-left: 50px; 
+        color: var(--color-white); 
+    }
+    
+    .container h3 {
+        font: bold 16px/27px 'obviously', sans-serif; 
+        margin: var(--margin-left-mobile) var(--margin-left-mobile) 2px; 
+    }
+    
+    .activities h4 {
+        font: italic 16px/29px 'obviously', sans-serif; 
+    }
+    
+/*links*/ 
+    .text a {
+        text-decoration: none;
+        color: var(--color-white); 
+    }
+    
+/*Activities list*/ 
+    main li{
+        list-style: square;
+        color: var(--color-white); 
+        margin:0 var(--margin-left-mobile); 
+    }
+    
+    .lastpara {
+        padding-bottom: 40px; 
+    }
+    
+/*Back to top*/ 
+    .topButton {
+        text-align: center;
+        font: normal 16px/27px 'obviously', sans-serif; 
+        margin: 5px; 
+    }
+    
+    .topButton a {
+        text-decoration: none;
+        color: var(--color-black); 
+    }
+    
+/*footer*/ 
+    footer {
+        background-color: var(--color-white);
+    }
+    .footer1, .footer2, .footer3{
+        padding: 25px var(--margin-left-mobile) 10px;
+    }
+    footer h3 {
+        font: italic 30px/35px 'swear-display', serif; 
+    }
+    
+    footer a, ul{
+        font: var(--regular-small-text);
+        color: var(--color-black);
+        text-decoration: none;
+        margin-top: 4px; 
+    }
+    
+    
+    .credit {
+        padding: var(--margin-left-mobile);
+        font: var(--regular-small-text);
+    }}
+    
+@media screen and (min-width:768px) {
+/*NAV BAR + logoicon*/ 
+    .logo{
+        width: 10%; 
+    }
+    .menu{
+        width: 8%; 
+    }
+    .logoText{
+        margin: -70px 37px; 
+    } 
+    /*PHOTO*/ 
+    .portrait{
+        width: 30%; 
+        left: 460px;
+    }
+/*bio*/ 
+    .bio p  {
+        font: normal 20px/30px 'obviously', sans-serif; 
+        margin: 90px var(--margin-left-tablet) 10px;
+    }
+    .bio a {
+        margin: 0 var(--margin-left-tablet);  
+    }
+/*Each section of resume*/
+    .writtenResume {
+        display: grid; 
+        grid-template-columns: 40% auto;
+        grid-template-areas: 
+        "profile edu" 
+        "skills honors" 
+        "coursework experience" 
+        "blank activitiesHeader";
+    }
+    .profile {
+        grid-area: profile;
+    }
+    .edu {
+        grid-area: edu;
+    }
+    .skills {
+        grid-area: skills;
+    }
+    .honors {
+        grid-area: honors;
+    }
+    .coursework {
+        grid-area: coursework;
+    }
+    .experience {
+        grid-area: experience;
+    }
+    .blank {
+        grid-area: blank;
+    }
+    .activitiesHeader {
+        grid-area: activitiesHeader;  
+    }
+    .container h2 {
+        margin: var(--margin-left-mobile) var(--margin-left-tablet) 3px; 
+    }
+    hr {
+        margin: 15px var(--margin-left-tablet);
+    }
+    .text{
+        font: normal 16px/32px 'obviously', sans-serif; 
+        margin: 5px var(--margin-left-tablet);
+    }
+    .container h3{
+        font: bold 16px/32px 'obviously', sans-serif; 
+        margin: 5px var(--margin-left-tablet) 2px;
+        letter-spacing: .8px; 
+    }
+    .textSmall li{
+        font: normal 16px/32px 'obviously', sans-serif;
+    }
+    .activities h4 {
+    font: italic 16px/32px 'obviously', sans-serif; } 
+    .activities{
+        margin-bottom: var(--margin-left-tablet); 
+    }
+/*BACK TO TOP BUTTON*/ 
+    .topButton {
+        text-align: center;
+        font: normal 20px/27px 'obviously', sans-serif; 
+        margin: 5px; 
+    }
+/*FOOTER*/
+    .footerSpace {
+        display: grid; 
+        grid-template-columns: 60% auto;
+        margin: 0 var(--margin-left-tablet);
+        grid-template-areas: "footer1 footer2" "footer3 blank" "credit blank";
+    }
+    .footer1 {
+        grid-area: footer1; 
+    }
+    .footer2 {
+        grid-area: footer2; 
+    }
+    .footer3 {
+        grid-area: footer3; 
+    }
+    .blank {
+        grid-area: blank;
+        background-color: var(--color-white);
+    }
+    .credit {
+        align-self: flex-start; 
+        grid-area: credit; 
+        background-color: var(--color-white);
+    }}
+
+@media screen and (min-width:1440px) {
+/*NAV BAR + logo Icon*/
+   .logo {
+       width: 10%; 
+    }
+   .menu {
+       width: 5%; 
+    }
+    .logoText{
+        margin: -170px 90px; 
+    } 
+ /*PHOTO*/ 
+    .portrait{
+       width: 20%; 
+       left: 1012px; 
+       top: 120px; 
+    }
+ /*bio*/ 
+    .bio p  {
+       font: normal 24px/34px 'obviously', sans-serif; 
+       margin: -96px var(--margin-left-desktop) 15px;
+       width: 60%; 
+       word-break: break-word; 
+    }
+    .bio a {
+       font: bold 35px/40px 'swear-display-cilati', serif; 
+       margin: 0 var(--margin-left-desktop); 
+    }
+    .container h2 {
+       font: bold 60px/70px 'swear-display-cilati', serif;
+       margin: var(--margin-left-tablet) var(--margin-left-desktop) 5px; 
+    }
+    hr {
+        margin: 18px var(--margin-left-desktop);
+    }
+    .text{
+        font: normal 24px/34px 'obviously', sans-serif; 
+        margin: 15px var(--margin-left-desktop);
+    }
+    .container h3{
+        font: bold 24px/34px 'obviously', sans-serif; 
+        margin: 15px var(--margin-left-desktop) 2px; 
+    }
+    .textSmall li{
+        font: normal 24px/40px 'obviously', sans-serif;
+        margin: 0 80px;
+    }
+    main li{
+        margin: 0 var(--margin-left-desktop);
+    }
+    .activities h4 {
+        font: italic 24px/34px 'obviously', sans-serif; } 
+    .activities{
+        margin-bottom: var(--margin-left-desktop); 
+    }
+/*Back to top button*/ 
+    .topButton a {
+        font: normal 24px/34px 'obviously', sans-serif; 
+        text-align: center; 
+    }
+    /*FOOTER*/
+    .footerSpace {
+        margin: 0 var(--margin-left-desktop);
+    }
+    footer h3 {
+        font: italic 60px/70px 'swear-display', serif; 
+    }
+    footer a, ul{
+        font: normal 24px/34px 'obviously', sans-serif; 
+        margin-top: 15px; 
+    }
+    .credit {
+        font: normal 24px/34px 'obviously', sans-serif; 
+    }}

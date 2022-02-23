@@ -1,8 +1,13 @@
 :root {
     --margin-left: 20px; 
+    --margin-left-tablet: 65px; 
     --color-black: #101111; 
     --color-white: #F5F5F5; 
     --regular-small-text: normal 17px/30px 'obviously', sans-serif;
+    --regular-small-text-tablet: normal 20px/30px 'obviously', sans-serif;
+    --nav-background-color: lightgrey; 
+    --mobilenav-text-color: #101111; 
+    
 }
 
 *{
@@ -13,6 +18,15 @@
     scroll-behavior: smooth;
 }
 
+/*PAGE 1*/ 
+.page1{
+    width: 100%; 
+    height: 100vh; 
+}
+
+
+/*MOBILE*/ 
+@media screen and (min-width: 0px) {
 header, main{
     background-color: var(--color-white);
 }
@@ -24,19 +38,17 @@ header, main{
 
 .logo {
     align-self: center;
-   padding: 20px 10px; 
+   padding: 45px 10px 0; 
    
-    
 }
 
 /*UI UX DESIGNER*/
 .title {
  font:  italic 20px/26px 'obviously', sans-serif; 
  color: var(--color-black);
- margin-top:-65px;
+ margin-top: -35px; 
  padding-right: 30px;  
  align-self: flex-end;
-
 }
 
 /*I aim...*/
@@ -44,48 +56,266 @@ header, main{
     font: normal 20px/26.8px 'obviously', sans-serif;
     color: var(--color-black);
     padding: var(--margin-left);
-    margin-top: 310px; }
+    margin-top: 270px;}
 
 /*Stunning, ethical, effective*/
 .underline {
     text-decoration: underline;
 }
 
+
+
+
+
+
+/*Mobile hamburger menu
+.mobileNav_menuIcon{
+    width: 20%; 
+    height: auto; 
+    margin-left: auto; 
+    margin-right: var(--margin-left); 
+    margin-top: var(--margin-left); 
+    right: 0; 
+    position: fixed; 
+    z-index: 500; 
+}
+
+.mobileNav_headerIcon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  /*  position: fixed; 
+    top: 0; 
+    left: 0; 
+    height: 100%; 
+    width: 100%; 
+    background-color: var(--nav-background-color);  
+}*/
+
+/*
+.mobileNav_logoIcon {
+    width: 20%; 
+    height: auto;
+    margin-left: 10px; 
+    margin-top: var(--margin-left); 
+    position: fixed; 
+}
+
+.mobileNavText {
+    height: 100vh; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    height: 100%; 
+    width: 100%; 
+    background-color: var(--nav-background-color);
+}
+
+
+.mobileNavList {
+    transform: translate(100vw);
+}
+
+
+.mobileNavList--open{
+    transform: translate(0);
+}
+
+
+.mobileNavList{
+    margin-top: 100px; 
+    display: flex;
+    flex-direction:  column;
+    /*position: fixed; 
+    top: 0; 
+    left: 0; 
+    height: 100%; 
+    width: 100%; 
+    background-color: var(--nav-background-color); 
+}*/
+
+/*
+.mobileNavList a {
+    margin: var(--margin-left); 
+    list-style-type: none;
+    padding: 20px 0; 
+    text-decoration: none;
+    font: normal 40px/100px 'swear-display', serif;
+    color: var(--mobilenav-text-color);
+    cursor: pointer;
+
+}
+
+.mobileNavList a:hover {
+    font: italic 30px 'obviously', sans-serif; 
+}
+
+.menuOrder {
+    font: italic 30px/35px 'swear-display', serif; 
+    margin: var(--margin-left) 10px; 
+}
+
+--mobile menu - contact info
+.mobileNav_contactInfo {
+    position: absolute; 
+    position: fixed; 
+    bottom: var(--margin-left);
+}
+.mobileNav_contactInfo a{
+    font: normal 15px/45px 'obviously', sans-serif; 
+    text-decoration: none;
+    color: var(--mobilenav-text-color);
+    margin: var(--margin-left);
+    padding: 20px 0; 
+}
+*/
+
+
+/*
 .menu {
     width: 20%; 
+    margin-top: 70px; 
     height: auto; 
     padding-left: var(--margin-left);
 }
-
+*/
 
 /*circle*/
-/*.iconBlack{
+.mainFooter img {
+    position: absolute; 
+    right: 180px; 
+    bottom: -10px;
     width: 50%; 
     height: auto; 
-    position: relative; 
-    right:  
-    z-index: 1;
-    align-self: flex-end;
-}*/
-
-.iconWhite {
-    margin-left:100px; 
-    width: 50%; 
-    height: auto;
-    position: relative;  
-    z-index: 5;
-    align-self: flex-end;
 }
 
+.iconBlack{
+    z-index: 1;
+    align-self: flex-end;
+    opacity: 0; 
+    transition: .5s ease-in-out; 
+    background-color: transparent;
+}
+
+.iconWhite { 
+    z-index: 5;
+    align-self: flex-end;
+    background-color: var(--color-white);
+    opacity: 1; 
+    border-radius: 50%;
+}
 
 .mainFooter {
     display: flex; 
     align-items: center;
     position: relative; 
+    vertical-align:top;
+    position: relative; 
+    top: 180px; 
+}
+
+.mainFooter:hover  .iconBlack{
+    opacity: 1;
+}
+
+.hamburgerMenuDesktop {
+    display: none; 
+}
+
+.caseStudyDesktop {
+    display: none; 
+}
+}
+/*TABLET*/ 
+@media screen and (min-width: 768px) {
+    .title {
+        font:  italic 36px/26px 'obviously', sans-serif;  
+        margin-top: -80px;  
+        padding-right: 55px; 
+     }
+     
+    .mainIntro p{
+    font: normal 36px/45px 'obviously', sans-serif;
+    margin: 220px var(--margin-left) 0;}
+
+    .mainFooter img {
+        width: 30%; 
+        height: auto; 
+        position: absolute; 
+        right: 40px; 
+        bottom: -50px;
+    }
+
+    .hamburgerMenuDesktop {
+        display: none; 
+    }
+
+ }
+   
+/*DESKTOP*/ 
+@media screen and (min-width: 1440px) {
+    .logo{
+    width: 95%; 
+    height: auto; 
+    margin-top: -120px; 
+    text-align: center;
+    margin-left: 80px;
+    }
+
+    .title {
+    font:  italic 50px/70px 'obviously', sans-serif;
+    margin-top: -170px;   
+    margin-right: 45px; 
+    }
+
+    .mainIntro p {
+    font: normal 30px/40px 'obviously', sans-serif;
+    text-align: right;
+    margin: -100px 85px; 
+    
+    }
+
+    .mainFooter img {
+        width: 20%; 
+        height: auto; 
+        position: absolute; 
+        right: 55px; 
+        top: 110px;
+    }
+
+    .hamburgerMenuDesktop {
+        display: block; 
+        position: absolute;
+        top: 680px; 
+        left: var(--margin-left-tablet); 
+    }
+
+  
+    .desktopMenuList {
+        font:  normal 45px/50px 'obviously', sans-serif;
+        color: var(--color-black); 
+        text-decoration: none;
+        
+    }
+    .desktopNav_listItems{
+        padding: 15px var(--margin-left-tablet);
+    }
+
+    .menuOrder {
+        font: italic 30px/50px 'swear-display', serif; 
+    }
+    
 }
 
 
+/*PAGE 2*/ 
+.page2{
+    width: 100%; 
+    height: 100vh; 
+    background-color: var(--color-white);
+}
 /*selected works*/
+@media screen and (min-width:0px) {
 .casestudy{
     display: flex; 
     flex-flow: row wrap; 
@@ -93,14 +323,16 @@ header, main{
 
 /*?? still puzzled how this doesn't work? -> text at center and 70px margin from top*/
 .works {
-    align-items: center;
-    margin-top: 70px; 
+    width: 70%; 
+    margin-top: 55px; 
+    margin-left: 50px; 
 }
 
-.order {
+
+.order1 {
     font: italic 72px 'obviously', sans-serif;
     color: var(--color-black);
-    margin: 0 var(--margin-left);}
+    margin: -10px var(--margin-left);}
 
 /*NBP*/
 .title1 {
@@ -120,22 +352,33 @@ hr {
    
 }
 
+
 .container1 p {
     padding: 5px var(--margin-left);
 }
 
-.container1 img {
-    width: 100%; 
-    height: auto; 
+.mobilePhoto {
     align-self: center;
-    padding: 0 var(--margin-left);} 
+    margin: 10px var(--margin-left);
+} 
+
+.mobileThumbnail {
+    width: 100%; 
+    height: auto;
+}
+
+.tabletPhoto {
+    display: none; 
+}
+
 
 /*UI/UX Casestudy 2021*/
 .descriptionNbp {
     display: flex; 
-    flex-flow: column nowrap; 
+    flex-flow: row nowrap; 
     justify-content: space-between;
     justify-items: center;
+
 }
 .container1 p {
     font: normal 20px/26.8px 'obviously', sans-serif; 
@@ -144,27 +387,144 @@ hr {
 }
 
 .year{
-  justify-self: flex-end;
+  margin-right: var(--margin-left); 
+}
 }
 /* year need to be in same line as UI/UX Case study*/
 
+/*TABLET*/ 
+@media screen and (min-width: 768px){
+    .works {
+    width: 60%; 
+    margin-top: 45px; 
+    margin-left: 150px; 
+    }
 
+    .order {
+    font: italic 85px 'obviously', sans-serif;
+    font-weight: bold;
+    margin:-40px var(--margin-left-tablet) 10px; }
+
+    .container1 img {
+    margin: 0 var(--margin-left-tablet); 
+    padding: 0; }
+
+    .mobilePhoto{
+        display: none; 
+    }
+
+    .tabletPhoto{
+    display:block; 
+    align-self: center;
+    }
+
+    .tabletThumbnail {
+        width: 95%; 
+        height: auto; 
+    }
+
+    .title1 {
+    font: bold 60px/65px 'obviously', sans-serif;
+    padding: 0 25px;
+     }
+
+    .line {
+    margin: 10px var(--margin-left-tablet);
+    }
+
+    .container1 p {
+    font: normal 35px/40px 'obviously', sans-serif;
+    margin-left: 5px; } 
+
+    .caseStudyDesktop {
+        display: none; 
+    }
+}
+
+/*DESKTOP*/ 
+@media screen and (min-width: 1440px){
+.works{
+    width: 40%; 
+    margin-left: 470px; 
+    margin-top: 10px; 
+}
+
+
+.tabletThumbnail{
+    display: none;
+}
+
+caseStudyMobile_Tablet{
+    display: none;
+}
+
+.order1 {
+    display: none; 
+}
+.container2{
+    display: none;
+}
+.caseStudyDesktop{
+    display: block; 
+    display: grid; 
+    grid-template-columns: 30% auto;
+    justify-items: center;
+}
+
+
+.desktopPhoto{
+    display:block; 
+    
+    }
+
+.desktopThumbnail{
+    width: 100%; 
+    height: auto; 
+    top: 50px; 
+    right: 25px; 
+    justify-self: flex-end;
+}
+.order {
+    font: italic 115px 'obviously', sans-serif;
+ 
+    margin-left: var(--margin-left);
+    margin-bottom: -20px;
+    }
+    
+.title1{
+    font: bold 65px/70px 'obviously', sans-serif; 
+    margin-bottom: 30px;
+    
+}
+
+.title1_nounderline{
+    text-decoration: none;
+}
+.container1 p {
+    font: normal 23px/30px 'obviously', sans-serif;}
+}
+
+.line {
+    margin: 15px 30px 0 25px; 
+    font-weight: bold;
+}
+
+.descriptionNbp{
+    display: flex; 
+    flex-flow: row nowrap; 
+}
+
+.year {
+    align-self: flex-end; 
+}
 
 /*FOOTERRRR*/
-
+@media screen and (min-width: 0px) {
 footer {
-    z-index: -2; 
     background-color: var(--color-black);
     color: var(--color-white); 
+    
 }
-/*
-.swoosh {
-    position: relative;
-    left: 2px; 
-    top: 5px; 
-    z-index: 2; 
-}
-*/
 
 .footer1, .footer2, .footer3{
     padding: 25px var(--margin-left) 10px;
@@ -182,4 +542,30 @@ footer a, ul{
 .credit {
     padding: var(--margin-left);
     font: var(--regular-small-text);
+}      
+}
+
+@media screen and (min-width: 768px){
+    
+    .footer1, .footer2, .footer3 {
+    padding: var(--margin-left-tablet) var(--margin-left-tablet) var(--margin-left); 
+    }
+
+    footer h3 {
+    font: italic 40px/45px 'swear-display', serif; 
+    margin-bottom: 15px; 
+    }
+
+    footer a, ul {
+    font: var(--regular-small-text-tablet); 
+    }
+
+    .spacing {
+    padding: 10px 0; 
+    }
+
+    .credit {
+    font: var(--regular-small-text-tablet);    
+    margin-left: 10px;
+    }
 }

@@ -1,0 +1,334 @@
+:root {
+    --margin-left-mobile: 20px; 
+    --margin-left-tablet: 30px; 
+    --margin-left-desktop: 50px; 
+    --color-black: #101111; 
+    --color-white: #F5F5F5; 
+    --regular-small-text: normal 17px/30px 'obviously', sans-serif;
+    --margin-left-artwork: 120px; 
+}
+
+*{
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'obviously', sans-serif;
+    font-family: 'swear-display', serif;
+    scroll-behavior: smooth;
+}
+.content{
+    background-color: var(--color-white);
+}
+@media screen and (min-width: 0px) {
+/*NAV BAR + PLAYGROUND*/
+    .logo {
+        width: 15%; 
+        height: auto; 
+        margin: 40px var(--margin-left-mobile) 0;
+    }
+    .menu {
+        width: 13%; 
+        height: auto; 
+        margin: 40px var(--margin-left-mobile) 0;
+    }
+    .navbar {
+        display: flex; 
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    .playground{
+        width: 80%; 
+        justify-self: center;
+        margin: -15px 30px; 
+    }
+/*IntroText*/
+    .mobileArtTitle {
+        display: block; 
+    }
+/*hide, used for Tablet + Desktop*/ 
+     .tabletArtTitle {
+        display: none; 
+    }
+    .introText p{
+        display: block;
+        font: normal 16px/30px 'obviously', sans-serif; 
+        margin: var(--margin-left-mobile);
+        padding-top: 0;
+        padding-bottom: 20px; 
+    }
+/*2021*/
+    .container{
+        padding-bottom: var(--margin-left-mobile);
+    }
+    .firstyear {
+        background-color: var(--color-black);
+    }
+    .yearMade h1 {
+    font: italic 65px 'obviously', sans-serif;
+    color: var(--color-white);
+    }
+    .yearMade{
+    margin: var(--margin-left-mobile);
+    }
+/*title*/ 
+    .yearMade .container h2 {
+        font: italic 20px/25px 'obviously', sans-serif; 
+        color: var(--color-white);
+        padding: 5px var(--margin-left-mobile) 5px;
+    }
+/* 2020*/
+    .secondYear {
+        background-color: var(--color-white);
+    }
+    .yearMade2 h1{
+        margin: 0 var(--margin-left-mobile);
+    }
+    .yearMade2 {
+        font: italic 65px 'obviously', sans-serif;
+        margin: 0 var(--margin-left-mobile);
+    }
+/*title*/
+    .yearMade2 .container h2 {
+        font: italic 20px/25px 'obviously', sans-serif;
+        color: var(--color-black);
+        padding: 0 var(--margin-left-mobile); 
+    }
+    img {
+        width: 100%; 
+        height: auto; 
+        padding: 10px 0 0;
+    }
+/*Back to top*/ 
+    .topButton {
+        text-align: center;
+        font: normal 16px/27px 'obviously', sans-serif; 
+        margin: 5px;   
+    }
+    .topButton a {
+        text-decoration: none;
+        color: var(--color-black); 
+    }
+/*footer*/
+    footer {
+        background-color: var(--color-black);
+    }
+    .footer1, .footer2, .footer3{
+        padding: 25px var(--margin-left-mobile) 10px;
+        color: var(--color-white);
+    }
+    footer h3 {
+        font: italic 30px/35px 'swear-display', serif; 
+    }
+    footer a, ul{
+        font: var(--regular-small-text);
+        text-decoration: none;
+        margin-top: 4px; 
+        color: var(--color-white); 
+    }
+    .credit {
+        padding: var(--margin-left-mobile);
+        font: var(--regular-small-text);
+        color: var(--color-white); 
+    }}
+
+@media screen and (min-width:768px) {
+/*PAGE1*/ 
+    .logo{
+        width: 10%; 
+        height: auto; 
+    }
+    .menu {
+    width: 8%; 
+    height: auto; 
+    }
+    .playground{
+    width: 50%; 
+    height: auto; 
+    margin: -20px var(--margin-left-mobile);
+    }
+/*hide, used for Mobile */ 
+    .mobileArtTitle {
+        display: none;
+    }
+     .tabletArtTitle{
+        display: block; 
+    }
+    .introText p{
+    display: block; 
+    font: normal 27px/33px 'obviously', sans-serif; 
+    margin: 10px 27px 50px; 
+    letter-spacing: .5px;
+    }
+    .introText{
+    margin-bottom: 15px;
+    }
+    .yearMade {
+        font: italic 69px 'obviously', sans-serif;
+    }
+    .tabletContainer {
+        display: grid; 
+        grid-template-columns: 40% auto;
+        grid-template-areas:"photo3 photo4" "photo1 photo2";
+    }
+    .photo1 {
+        grid-area: photo1;
+        margin: 0 15px 0 0; 
+    }
+    .photo2 {
+        grid-area: photo2; 
+        margin:  0 15px; 
+    }
+    .photo3 {
+        grid-area: photo3;
+        margin: 0 15px 15px 0;  
+    }
+    .photo4 {
+        grid-area: photo4; 
+        align-self: end; 
+        margin: 0 15px 15px; 
+    }
+/*PAGE 1.5+2?*/ 
+    .yearMade .container h2, .yearMade2 .container h2 {
+        font: normal 40px/45px 'swear-display', serif;
+        font-weight: bold;
+        letter-spacing: .5px;
+        padding: 5px var(--margin-left-mobile) 65px;
+    }
+    .tabletAlignCenter {
+        text-align: center;
+    }
+    .topButton {
+        font: normal 25px/33px 'obviously', sans-serif;
+        padding-top: -10px;
+        padding-bottom: 10px; 
+    }
+ /*FOOTER*/ 
+    .footer h3 {
+        font: italic 35px/40px 'swear-display', serif;
+    }
+    footer {
+        width: 100%; 
+        height: auto; 
+        background-color: var(--color-black);
+        display: grid; 
+        grid-template-rows: 60% auto;
+        grid-template-areas:"footer1 footer2" "footer3 blank" "credit blank";
+    }
+    .footer1 {
+        grid-area: footer1; 
+    }
+    .email{
+        padding-top: 20px; 
+    }
+    .link, .email{   
+        font: normal 25px/27px 'obviously', sans-serif; 
+    }
+    .footer2 {
+        grid-area: footer2; 
+    }
+    .footer3 {
+        grid-area: footer3; 
+    }
+    .blank {
+        grid-area: blank;
+        background-color: var(--color-black);
+    }
+    .credit {
+        align-self: flex-start; 
+        grid-area: credit; 
+        background-color: var(--color-black);
+    }
+}
+
+@media screen and (min-width:1440px){
+    .logo{
+        width: 10%; 
+        height: auto; 
+    }
+    .menu {
+        width: 5%; 
+        height: auto; 
+    }
+    .playground{
+        width: 40%; 
+        height: auto;
+        margin-left: -8px;
+        margin-top: -40px;
+    }
+/*hide Mobile */ 
+    .mobileArtTitle {
+        display: none;
+    }
+    .introText{
+        width: 100%; 
+        display: grid; 
+        grid-template-columns: 40% auto;
+        grid-template-areas: "blank introText";
+        word-wrap: break-word;
+    }
+    .introText p{
+        display: block; 
+        font: normal 27px/40px 'obviously', sans-serif; 
+        letter-spacing: .5px;
+        padding-top: -20px; 
+        grid-area: introText; 
+        margin-right: 50px;
+    }
+
+    .yearMade2 h1, .yearMade h1{
+        margin: var(--margin-left-mobile) var(--margin-left-desktop);
+    }
+    .desktopIntroBlank {
+       grid-area: blank; 
+    }
+    .yearMade2 .container h2, .yearMade1 .container h2 {
+        font: italic 45px/50px 'swear-display', serif;
+    }
+    .firstyear .container{
+        margin: 0 100px; 
+    }  
+    .year2Artwork{
+      display: flex;
+      flex-flow: row wrap; 
+      width: 100%;
+      justify-items: center;
+    }
+    .artwork1{
+        width: 40%; 
+        height: auto; 
+        margin: 0 20px 5px 100px; 
+    }
+    .artwork2 {
+        width: 40%; 
+        height: auto; 
+        margin: 0 100px 5px 10px; 
+    }
+    .artwork3 {
+        width: 100%; 
+        height: auto; 
+        margin: 0 100px; 
+    }
+    .ilovetree {
+        align-self: center; 
+    }
+    img{
+        padding: 0; 
+    }
+/*FOOTER*/ 
+    .footer1, .footer2{
+        margin: 70px; 
+    }
+    .footer3, .credit{
+        margin-left: 70px; 
+    }
+    footer h3 {
+        font: italic 60px/70px 'swear-display', serif; 
+    }
+    footer a, ul{
+        font: normal 24px/34px 'obviously', sans-serif; 
+        margin-top: 15px; 
+    }
+    .credit {
+        font: normal 24px/34px 'obviously', sans-serif; 
+    }}
+    
+    
