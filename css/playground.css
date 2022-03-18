@@ -19,16 +19,120 @@
     background-color: var(--color-white);
 }
 @media screen and (min-width: 0px) {
+/*HAMBURGER MENU*/ 
+    .tablet-nav {
+        display: none; 
+    }
+    .mobile-nav__menu-icon{
+        background-color: transparent;
+        max-width: 150px;
+        stroke: var(--color-black);
+        stroke-width: 1.5;
+        width: 10%;
+        z-index: 500;
+        position: absolute; 
+        top: 20px; 
+        right: 20px; 
+        position: fixed;
+        cursor: pointer;
+    }
+    .mobile-nav__button {
+        display: flex;
+    } 
+    .mobile-nav__list{
+        background-color: var(--color-black);
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        padding: 150px 30px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 400;
+        position: fixed;
+    }
+    .logo-menu{
+        width: 25%; 
+        height: auto; 
+        position: absolute;
+        top: 20px; 
+        left: 5px; 
+        padding: 0px; 
+        cursor: pointer;
+    }
+    .mobile-nav__list-item {
+        list-style-type: none;
+    }
+    .mobile-nav__list-link  {
+        display: block;
+        text-decoration: none;
+        margin: 5px 0;
+        padding: 10px 0;
+        font: normal 25px/45px 'obviously', sans-serif; 
+        cursor: pointer;  
+        color: var(--color-white);
+    }
+    .mobile-nav__list-link:hover{
+        font-style: italic;
+    }
+    .mobile-nav_contact-link{
+        display: block;
+        text-decoration: none;
+        font: normal 15px/30px 'obviously', sans-serif; 
+        color: var(--color-white);  
+    }
+    .mobile-nav-contact_list{
+        margin-top: 280px; 
+    }
+    .menuOrder {
+        font: italic 20px/35px 'swear-display', serif; 
+        margin: var(--margin-left) 10px; 
+        color: var(--color-white);
+    }
+    .mobile-nav__list {
+        transform: translate(100vw);
+    }
+    .mobile-nav_contact-info{
+        margin: 5px 0; 
+    }
+    .mobile-nav__list--open {
+        animation: slideOpen .15s ease-in forwards;
+    }
+    .mobile-nav__list--close {
+        animation: slideClosed .15s ease-in forwards;
+    }
+    @keyframes slideOpen {
+        from {
+            transform: translate(100vw);
+        }
+        to {
+            transform: translate(0);
+        }
+    }
+    @keyframes slideClosed {
+        from {
+            transform: translate(0);
+        }
+        to {
+            transform: translate(100vw);
+        }
+    }
+    .mobile-nav__menu-icon--open {
+        display: none;
+    }
+    .nav{
+        display: none; 
+    }
+
 /*NAV BAR + PLAYGROUND*/
     .logo {
         width: 15%; 
         height: auto; 
-        margin: 40px var(--margin-left-mobile) 0;
-    }
-    .menu {
-        width: 13%; 
-        height: auto; 
-        margin: 40px var(--margin-left-mobile) 0;
+        position: fixed; 
+        margin: 15px var(--margin-left-mobile) 0;
+        cursor: pointer;
     }
     .navbar {
         display: flex; 
@@ -38,12 +142,14 @@
     .playground{
         width: 80%; 
         justify-self: center;
-        margin: -15px 30px; 
+        margin: 50px 30px 0; 
     }
+
 /*IntroText*/
     .mobileArtTitle {
         display: block; 
     }
+
 /*hide, used for Tablet + Desktop*/ 
      .tabletArtTitle {
         display: none; 
@@ -55,6 +161,7 @@
         padding-top: 0;
         padding-bottom: 20px; 
     }
+
 /*2021*/
     .container{
         padding-bottom: var(--margin-left-mobile);
@@ -69,12 +176,14 @@
     .yearMade{
     margin: var(--margin-left-mobile);
     }
+
 /*title*/ 
     .yearMade .container h2 {
         font: italic 20px/25px 'obviously', sans-serif; 
         color: var(--color-white);
         padding: 5px var(--margin-left-mobile) 5px;
     }
+
 /* 2020*/
     .secondYear {
         background-color: var(--color-white);
@@ -86,6 +195,7 @@
         font: italic 65px 'obviously', sans-serif;
         margin: 0 var(--margin-left-mobile);
     }
+
 /*title*/
     .yearMade2 .container h2 {
         font: italic 20px/25px 'obviously', sans-serif;
@@ -97,6 +207,7 @@
         height: auto; 
         padding: 10px 0 0;
     }
+
 /*Back to top*/ 
     .topButton {
         text-align: center;
@@ -107,6 +218,7 @@
         text-decoration: none;
         color: var(--color-black); 
     }
+
 /*footer*/
     footer {
         background-color: var(--color-black);
@@ -131,6 +243,33 @@
     }}
 
 @media screen and (min-width:768px) {
+    .mobile-nav__list {
+        padding: 190px var(--margin-left-tablet);
+    }
+    .mobile-nav__list-link {
+        margin: 25px 0;
+        font: normal 35px/45px 'obviously', sans-serif; 
+    }
+    .mobile-nav_contact-link{
+        font: normal 18px/30px 'obviously', sans-serif; 
+        color: var(--color-white);  
+        margin-top: 20px; 
+    }
+    .mobile-nav-contact_list{
+        margin-top: 260px; 
+    }
+    .menuOrder {
+        font: italic 20px/35px 'swear-display', serif; 
+        margin: var(--margin-left) 10px; 
+        color: var(--color-white);
+    }
+    .logo-menu{
+        width: 15%; 
+    }
+    .mobile-nav{
+        display: block; 
+    }
+
 /*PAGE1*/ 
     .logo{
         width: 10%; 
@@ -143,8 +282,9 @@
     .playground{
     width: 50%; 
     height: auto; 
-    margin: -20px var(--margin-left-mobile);
+    margin: 70px var(--margin-left-mobile) 0;
     }
+
 /*hide, used for Mobile */ 
     .mobileArtTitle {
         display: none;
@@ -154,7 +294,7 @@
     }
     .introText p{
     display: block; 
-    font: normal 27px/33px 'obviously', sans-serif; 
+    font: normal 25px/33px 'obviously', sans-serif; 
     margin: 10px 27px 50px; 
     letter-spacing: .5px;
     }
@@ -186,6 +326,7 @@
         align-self: end; 
         margin: 0 15px 15px; 
     }
+
 /*PAGE 1.5+2?*/ 
     .yearMade .container h2, .yearMade2 .container h2 {
         font: normal 40px/45px 'swear-display', serif;
@@ -197,10 +338,11 @@
         text-align: center;
     }
     .topButton {
-        font: normal 25px/33px 'obviously', sans-serif;
+        font: normal 18px/33px 'obviously', sans-serif;
         padding-top: -10px;
         padding-bottom: 10px; 
     }
+
  /*FOOTER*/ 
     .footer h3 {
         font: italic 35px/40px 'swear-display', serif;
@@ -220,7 +362,7 @@
         padding-top: 20px; 
     }
     .link, .email{   
-        font: normal 25px/27px 'obviously', sans-serif; 
+        font: normal 18px/27px 'obviously', sans-serif; 
     }
     .footer2 {
         grid-area: footer2; 
@@ -240,6 +382,36 @@
 }
 
 @media screen and (min-width:1440px){
+    .mobile-nav__menu-icon{
+        width: 8%; 
+    }
+    .mobile-nav__list {
+        padding: 240px var(--margin-left-tablet);
+        text-align: center;
+    }
+    .mobile-nav__list-link {
+        margin: 20px 0;
+        font: normal 32px/45px 'obviously', sans-serif; 
+    }
+    .mobile-nav_contact-link{
+        font: normal 20px/30px 'obviously', sans-serif; 
+        color: var(--color-white);  
+        margin-top: 20px; 
+    }
+    .mobile-nav-contact_list{
+        margin-top: 180px; 
+        margin-left: 20px; 
+        text-align: left;
+    }
+    .menuOrder {
+        font: italic 20px/35px 'swear-display', serif; 
+        margin: var(--margin-left) 10px; 
+        color: var(--color-white);
+    }
+    .logo-menu{
+        width: 10%; 
+        margin: 20px; 
+    }
     .logo{
         width: 10%; 
         height: auto; 
@@ -251,9 +423,10 @@
     .playground{
         width: 40%; 
         height: auto;
-        margin-left: -8px;
-        margin-top: -40px;
+        margin-left: 10px;
+        margin-top: 60px;
     }
+
 /*hide Mobile */ 
     .mobileArtTitle {
         display: none;
@@ -269,11 +442,9 @@
         display: block; 
         font: normal 27px/40px 'obviously', sans-serif; 
         letter-spacing: .5px;
-        padding-top: -20px; 
         grid-area: introText; 
         margin-right: 50px;
     }
-
     .yearMade2 h1, .yearMade h1{
         margin: var(--margin-left-mobile) var(--margin-left-desktop);
     }
@@ -313,7 +484,11 @@
     img{
         padding: 0; 
     }
+    
 /*FOOTER*/ 
+    .topButton a{
+        font-size: 25px; 
+    }
     .footer1, .footer2{
         margin: 70px; 
     }
@@ -323,12 +498,12 @@
     footer h3 {
         font: italic 60px/70px 'swear-display', serif; 
     }
-    footer a, ul{
-        font: normal 24px/34px 'obviously', sans-serif; 
+    footer a, ul, .email, .link{
+        font: normal 25px/34px 'obviously', sans-serif; 
         margin-top: 15px; 
     }
     .credit {
-        font: normal 24px/34px 'obviously', sans-serif; 
+        font: normal 25px/34px 'obviously', sans-serif; 
     }}
     
     

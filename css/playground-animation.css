@@ -1,0 +1,97 @@
+@media screen and (min-width: 0px){
+/*REVEAL 1*/ 
+    .reveal{
+        position: relative; 
+        transform: translateY(150px);
+        opacity: 0;
+        transition: .5s all ease;
+    }
+    .reveal.active{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+/*REVEAL2*/ 
+    .reveal2{
+        position: relative; 
+        transform: translateY(150px);
+        opacity: 0;
+        transition: .5s all ease;
+    }
+    .reveal2.active{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+/*REVEAL3*/ 
+    .reveal3{
+        position: relative; 
+        transform: translateY(150px);
+        opacity: 0;
+        transition: .5s all ease;
+    }
+    .reveal3.active{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+/*REVEAL4*/ 
+    .reveal4{
+        position: relative; 
+        transform: translateY(150px);
+        opacity: 0;
+        transition: .5s all ease;
+    }
+    .reveal4.active{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+/*REVEAL5*/ 
+    .reveal5{
+        position: relative; 
+        transform: translateY(150px);
+        opacity: 0;
+        transition: .5s all ease;
+    }
+    .reveal5.active{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+/*REVEAL6*/ 
+    .reveal6{
+        position: relative; 
+        transform: translateY(150px);
+        opacity: 0;
+        transition: .5s all ease;
+    }
+    .reveal6.active{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+/*REVEAL7*/ 
+    .reveal7{
+        position: relative; 
+        transform: translateY(150px);
+        opacity: 0;
+        transition: .5s all ease;
+    }
+    .reveal7.active{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+/*REVEAL8*/ 
+    .reveal8{
+        position: relative; 
+        transform: translateY(150px);
+        opacity: 0;
+        transition: .5s all ease;
+    }
+    .reveal8.active{
+        transform: translateY(0);
+        opacity: 1;
+      }
+}

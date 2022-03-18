@@ -7,13 +7,43 @@
     <link type="text/css" rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="https://use.typekit.net/quk1zsi.css">
     <link type="text/css" rel="stylesheet" href="../css/playground.css" />
+    <link type="text/css" rel="stylesheet" href="../css/playground-animation.css" />
     <title>Cindy Quach | Playground</title>
 </head>
 <body>
+<!--Mobile nav-->
+<nav class="mobile-nav">
+  <div role="img" class="mobile-nav__button" id="button-container">
+      <!-- Menu icon -->
+      <img id="open-button" class="mobile-nav__menu-icon mobile-nav__menu-icon--closed" src="../graphics/menuIcon.svg" alt="hamburgerIcon"> 
+      <!-- Close button icon -->
+      <img id="close-button" class="mobile-nav__menu-icon mobile-nav__menu-icon--open" src="../graphics/closeIconWhite.png" alt="closeMenuIcon">
+  </div>
+  <ul class="mobile-nav__list" id="mobile-menu">
+  <div class="logo-menu"> <a href="../index.html"><img src="../graphics/logoIconWhite.svg"> </a> </div>
+      <li class="mobile-nav__list-item">
+          <a class="mobile-nav__list-link" href="nbp_casestudy.html">WORK <span class="menuOrder">01</span></a>
+      </li>
+      <li class="mobile-nav__list-item">
+          <a class="mobile-nav__list-link" href="artwork.html">PLAYGROUND <span class="menuOrder">02</span></a>
+      </li>
+      <li class="mobile-nav__list-item">
+          <a class="mobile-nav__list-link" href="aboutme.html">ABOUT <span class="menuOrder">03</span></a>
+      </li>
+      <div class="mobile-nav-contact_list"> 
+      <li class="mobile-nav_contact-info"> 
+          <a class="mobile-nav_contact-link" href="https://www.linkedin.com/in/cindyq255/"> LinkedIn </a></li>
+      <li class="mobile-nav_contact-info"> 
+          <a class="mobile-nav_contact-link" href="https://www.behance.net/cindyqquach"> Behance </a> </li>
+      <li class="mobile-nav_contact-info"> 
+          <a class="mobile-nav_contact-link" href="mailto:cindyqquach@gmail.com"> cindyqquach@gmail.com</a> </li>
+      </div>
+  </ul>
+</nav>
 <div class="content">
     <div class="navbar" id="Top"> 
         <a class="logo" href="../index.html"><img src="../graphics/logoIcon.svg" alt="logo"> </a>
-        <img class="menu" src="../graphics/menuIcon.svg" alt="menu"> 
+       
     </div>
     <div>
         <img class="playground" src="../graphics/playgroundText.svg" alt="playgroundtext">
@@ -28,10 +58,10 @@
  
     </div>
 
-<div class="firstyear">  
+<div class="firstyear ">  
     <div class="yearMade"> 
         <h1> (2021) </h1>
-      <div class="container"> 
+      <div class="container reveal"> 
         <h2 class="mobileArtTitle">HANAHAKI </h2> 
         <div class="tabletContainer">
           <img class="photo photo1" src="../images/artwork/Hanahaki1.png" alt="hanahaki_posters">
@@ -43,7 +73,7 @@
         <h2 class="tabletArtTitle">HANAHAKI </h2> 
       </div>
       
-      <div class="container"> 
+      <div class="container reveal2"> 
         <h2 class="mobileArtTitle">LORDE: Melodrama - Redesign </h2> 
         <img src="../images/artwork/MELOVINYL.png" alt="Melodrama_vinym_redesign">
         
@@ -56,42 +86,42 @@
     <div class="yearMade2"> 
        <h1> (2020) </h1>
     <div class="year2Artwork">
-      <div class="container artwork1"> 
+      <div class="container artwork1 reveal3"> 
         <h2 class="ilovetree artTitle mobileArtTitle">I love tree (3000) </h2> 
         <img src="../images/artwork/Ilovetree3000.jpg" alt="Ilovetree3000">  
         
         <h2 class="tabletArtTitle">I love tree (3000) </h2> 
       </div>
 
-      <div class="container artwork2"> 
+      <div class="container artwork2 reveal4"> 
         <h2 class="artTitle mobileArtTitle">Farewell </h2> 
         <img src="../images/artwork/Farewell.jpg" alt="Farewell">  
         
         <h2 class="tabletArtTitle">Farewell </h2> 
       </div>
 
-      <div class="container artwork3"> 
+      <div class="container artwork3 reveal5"> 
         <h2 class="artTitle mobileArtTitle">Sudoku 2.0 </h2> 
         <img src="../images/artwork/sudoku2.0.jpg" alt="sudoku2">  
         <div class="blank1"></div>
         <h2 class="tabletArtTitle tabletAlignCenter">Sudoku 2.0 </h2>
       </div>
 
-      <div class="container artwork1"> 
+      <div class="container artwork1 reveal6"> 
         <h2 class="artTitle mobileArtTitle">Business (I need to take a short break)</h2> 
         <img src="../images/artwork/Business.jpg" alt="BusinessINeedToTakeAShortBreak">  
         
         <h2 class="tabletArtTitle">Business (I need to take a short break)</h2>
       </div>
 
-      <div class="container artwork2"> 
+      <div class="container artwork2 reveal7"> 
         <h2 class="artTitle mobileArtTitle">Harmonious Dance (do not panic!)</h2> 
         <img src="../images/artwork/Dance.jpg" alt="HarmoniousDanceDoNotPanic">  
         
         <h2 class="tabletArtTitle">Harmonious Dance (do not panic!)</h2>
       </div>
 
-      <div class="container artwork3">
+      <div class="container artwork3 reveal8">
         <h2 class="artTitle mobileArtTitle"> Dalat: Dreamy world </h2> 
         <img src="../images/artwork/DALAT.jpg" alt="DalatDreamyWorld">  
         <div class="blank1"></div>
@@ -126,5 +156,8 @@
     <p class="credit"> Cindy Quach &copy; 2021</p>
     <div class="blank"> </div>
 </footer>
+<script src="../js/menuMobile.js"></script>
+<script src="../js/menuTablet.js"></script>
+<script src="../js/playground-js.js"> </script>
 </body>
 </html>

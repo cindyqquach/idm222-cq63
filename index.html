@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> CINDY QUACH </title>
+    <title> Cindy Quach </title>
     <link type="text/css" rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="https://use.typekit.net/quk1zsi.css">
     <link type="text/css" rel="stylesheet" href="css/homepage.css"/>
@@ -12,36 +12,36 @@
 
 <body>
 <header>
-
-<!--MOBILE--> <!--
-    <nav class="mobileNav">
-        <div class="mobileNav_headerIcon">
-            <div role="img" class="mobileNav_logoIcon">
-                <a href="index.html"> <img src="graphics/logoIcon.svg"></a>
-            </div>
-            <div role="img" class="mobileNav_menuIcon" id="open-button"> 
-                <img src="graphics/menuIcon.svg" alt="hamburgerIcon"> 
-            </div>
+<!--Mobile nav-->
+<nav class="mobile-nav">
+    <div role="img" class="mobile-nav__button" id="button-container">
+        <!-- Menu icon -->
+        <img id="open-button" class="mobile-nav__menu-icon mobile-nav__menu-icon--closed" src="graphics/menuIcon.svg" alt="hamburgerIcon"> 
+        <!-- Close button icon -->
+        <img id="close-button" class="mobile-nav__menu-icon mobile-nav__menu-icon--open" src="graphics/closeIconWhite.png" alt="closeMenuIcon">
+    </div>
+    
+    <ul class="mobile-nav__list" id="mobile-menu">
+        <div class="logo-menu"> <a href="index.html"><img src="graphics/logoIconWhite.svg"> </a> </div>
+        <li class="mobile-nav__list-item">
+            <a class="mobile-nav__list-link" href="html/nbp_casestudy.html">WORK <span class="menuOrder">01</span></a>
+        </li>
+        <li class="mobile-nav__list-item">
+            <a class="mobile-nav__list-link" href="html/artwork.html">PLAYGROUND <span class="menuOrder">02</span></a>
+        </li>
+        <li class="mobile-nav__list-item">
+            <a class="mobile-nav__list-link" href="html/aboutme.html">ABOUT <span class="menuOrder">03</span></a>
+        </li>
+        <div class="mobile-nav-contact_list"> 
+        <li class="mobile-nav_contact-info"> 
+            <a class="mobile-nav_contact-link" href="https://www.linkedin.com/in/cindyq255/"> LinkedIn </a></li>
+        <li class="mobile-nav_contact-info"> 
+            <a class="mobile-nav_contact-link" href="https://www.behance.net/cindyqquach"> Behance </a> </li>
+        <li class="mobile-nav_contact-info"> 
+            <a class="mobile-nav_contact-link" href="mailto:cindyqquach@gmail.com"> cindyqquach@gmail.com</a> </li>
         </div>
-    <div class="mobileNavText" id="mobile-menu">
-        <ul class="mobileNavList"> 
-            <li class="mobileNav_listItems">
-                <a href="html/nbp_casestudy.html"> WORK <span class="menuOrder">01</span></a> </li>
-            <li class="mobileNav_listItems">
-                <a  href="html/artwork.html"> PLAYGROUND <span class="menuOrder">02</span> </a></li>
-            <li class="mobileNav_listItems">
-                <a href="html/aboutme.html">ABOUT <span class="menuOrder">03</span> </a></li>
-        
-        <div class="mobileNav_contactInfo">
-                <li><a href="https://www.linkedin.com/in/cindyq255/"> LinkedIn </a></li> 
-                <li><a href="https://www.behance.net/cindyqquach"> Behance </a> </li>
-            
-            <a href="mailto:cindyqquach@gmail.com"> cindyqquach@gmail.com</a>
-         
-        </div> 
-        </ul>
-    </div>   
-    </nav>-->
+    </ul>
+</nav>
 
 <div class="page1">
         <a href="index.html"> <img class="logo" src="graphics/logoText.svg" alt="logo"> </a>
@@ -53,8 +53,8 @@
               <p>I aim to work with brands to create <br> <span class="underline">stunning</span>, <span class="underline">ethical</span>, and <span class="underline"> effective digital products.</span>  </p>
         </div>
       
+    <div class="footerHeroPage">
     <div class="mainFooter" >
-    
 <!--<img class="menu" src="graphics/menuIcon.svg" alt="menu"> -->
         <img class="iconWhite" src="graphics/enjoyIcon.svg" alt="enjoythetour">
         <div>
@@ -62,17 +62,19 @@
             <img class="iconBlack" src="graphics/arrowCircle.svg" alt="arrow"></a>
         </div> 
     </div>
-</div>
 
-<div class="hamburgerMenuDesktop"> 
+
+    <div class="hamburgerMenuDesktop"> 
     <ul class="desktopNavList"> 
         <li class="desktopNav_listItems">
-            <a class="desktopMenuList" href="html/nbp_casestudy.html"> WORK <span class="menuOrder">01</span></a> </li>
+            <a class="desktopMenuList" href="html/nbp_casestudy.html"> WORK<span class="menuOrder">01</span></a> </li>
         <li class="desktopNav_listItems">
-            <a class="desktopMenuList" href="html/artwork.html"> PLAYGROUND <span class="menuOrder">02</span> </a></li>
+            <a class="desktopMenuList" href="html/artwork.html"> PLAYGROUND<span class="menuOrder">02</span> </a></li>
         <li class="desktopNav_listItems">
-            <a class="desktopMenuList" href="html/aboutme.html">ABOUT <span class="menuOrder">03</span> </a></li>
+            <a class="desktopMenuList" href="html/aboutme.html">ABOUT<span class="menuOrder">03</span> </a></li>
     </ul>
+</div>
+</div>
 </div>
 </header>
 
@@ -100,7 +102,8 @@
         <h1 class="title1"> North Bowl Philly Redesign </h1>
         <hr class="line">
             <div class="descriptionNbp"> 
-               <p class="casestudyName"> UI/UX Case Study <span class="year"> 2021</span> </p>
+               <p class="casestudyName"> UI/UX Case Study </p>
+               <p class="year"> 2021</p> 
             </div>
     </div>  
 </div>
@@ -138,24 +141,15 @@
         <h3> Let's connect</h3>
             <ul>
                 <li><a href="https://www.linkedin.com/in/cindyq255/"> LinkedIn </a></li> 
-                <div class="spacing"> </div>
                 <li><a href="https://www.behance.net/cindyqquach"> Behance </a> </li>
             </ul>  
     </div>
     <div  class="footer2"> 
         <h3> Thank you for visiting!</h3>
     </div>
-    <p class="credit"> Cindy Quach &copy; 2022</p>
+    <p class="credit"> &copy; Cindy Quach 2022</p>
 </footer>
+<script src="js/menuMobile.js"></script>
+<script src="js/menuTablet.js"></script>
 </body>
-
-<!--
-<script>
-    const button = document.getElementById('open-button'); 
-    const mobileMenu = document.getElementById('mobile-menu')
-    button.addEventListener("click", () => {
-        mobileMenu.classList.toggle('mobileNavList--open'); 
-
-    }); 
-</script> -->
 </html>

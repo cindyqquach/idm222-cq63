@@ -7,14 +7,44 @@
     <link type="text/css" rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="https://use.typekit.net/quk1zsi.css">
     <link type="text/css" rel="stylesheet" href="../css/aboutme.css"/>
+    <link type="text/css" rel="stylesheet" href="../css/playground-animation.css" />
     <title> Cindy Quach | About </title> 
 </head>
+<!--Mobile nav-->
+<nav class="mobile-nav">
+    <div role="img" class="mobile-nav__button" id="button-container">
+        <!-- Menu icon -->
+        <img id="open-button" class="mobile-nav__menu-icon mobile-nav__menu-icon--closed" src="../graphics/menuIcon.svg" alt="hamburgerIcon"> 
+        <!-- Close button icon -->
+        <img id="close-button" class="mobile-nav__menu-icon mobile-nav__menu-icon--open" src="../graphics/closeIconWhite.png" alt="closeMenuIcon">
+    </div>
+    <ul class="mobile-nav__list" id="mobile-menu">
+        <div class="logo-menu"> <a href="../index.html"><img src="../graphics/logoIconWhite.svg"> </a> </div>
+        <li class="mobile-nav__list-item">
+            <a class="mobile-nav__list-link" href="nbp_casestudy.html">WORK <span class="menuOrder">01</span></a>
+        </li>
+        <li class="mobile-nav__list-item">
+            <a class="mobile-nav__list-link" href="artwork.html">PLAYGROUND <span class="menuOrder">02</span></a>
+        </li>
+        <li class="mobile-nav__list-item">
+            <a class="mobile-nav__list-link" href="aboutme.html">ABOUT <span class="menuOrder">03</span></a>
+        </li>
+        <div class="mobile-nav-contact_list"> 
+        <li class="mobile-nav_contact-info"> 
+            <a class="mobile-nav_contact-link" href="https://www.linkedin.com/in/cindyq255/"> LinkedIn </a></li>
+        <li class="mobile-nav_contact-info"> 
+            <a class="mobile-nav_contact-link" href="https://www.behance.net/cindyqquach"> Behance </a> </li>
+        <li class="mobile-nav_contact-info"> 
+            <a class="mobile-nav_contact-link" href="mailto:cindyqquach@gmail.com"> cindyqquach@gmail.com</a> </li>
+        </div>
+    </ul>
+  </nav>
 <body>
     <div class="intro"> 
         <div class="content">
             <div class="navbar" id="Top"> 
                 <a class="logo" href="../index.html"><img src="../graphics/logoIcon.svg" alt="logo"> </a>
-                <img class="menu" src="../graphics/menuIcon.svg" alt="menu"> 
+            
             </div>
             
             <div>
@@ -38,6 +68,7 @@
 
     <main>
         <div class="writtenResume"> 
+          <div class="reveal"> 
             <div class="container profile">
                <h2>Profile</h2> 
                <hr> 
@@ -70,7 +101,8 @@
                     <p> (Winter 2020 - Present) </p> </li>
                 </ul>     
             </div> 
-            
+        </div>
+        <div class="reveal2"> 
             <div class="container skills"> 
                 <h2> Professional Skills </h2>
                 <hr>
@@ -99,7 +131,8 @@
                         <li>Entertainment and Arts Management </li> 
                     </ul> 
             </div>
-    
+        </div>
+        <div class="reveal3">
             <div class="container experience"> 
                 <h2> Experience </h2>
                 <hr>
@@ -140,7 +173,7 @@
                                 clothes for less fortunate students of Sapa Hope Center.</li> 
                         </ul>
                 </div> 
-            </div>
+            
         
             <div class="container activitiesHeader"> 
                 <h2> Activities </h2>
@@ -151,6 +184,8 @@
                 </div>
             </div>
         </div>
+    </div>
+    </div>
     </main>
     
 
@@ -178,4 +213,7 @@
         </div>
     </footer>
 </body>
+<script src="../js/menuMobile.js"></script>
+<script src="../js/menuTablet.js"></script>
+<script src="../js/playground-js.js"> </script>
 </html>
